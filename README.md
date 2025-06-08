@@ -17,6 +17,9 @@ The Editor supports 2 modes:
     - Circle
 
 ### How to use
+
+Navigating the Coordinate System: Use the middle mouse button to drag (pan) the view, and scroll the mouse wheel to zoom in and out.
+
 | Preview | Description |
 |--------|-------------|
 | ![PredefinedShapes](icons/shapes.svg) | **Shapes** - Opens a dropdown with three shapes: Square, Triangle, and Circle. Adds the corresponding shape to the canvas.|
