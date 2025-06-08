@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Vertex Generator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav id="sidebar">
+        <ul>
+            <li>
+                <button class="highlight-button" id="shapes-btn" title="Shapes">
+                    <img src="icons/shapes.svg" alt="Shapes">
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li>
+                            <button class="tool-button" id="square-btn" title="Square">
+                                <img src="icons/square.svg" alt="Square">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="tool-button" id="triangle-btn" title="Triangle">
+                                <img src="icons/triangle.svg" alt="Triangle">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="tool-button" id="circle-btn" title="Circle">
+                                <img src="icons/circle.svg" alt="Circle">
+                            </button>
+                        </li>
+                    </div>
+
+                </ul>
+            </li>
+            <li>
+                <button class="highlight-button" id="freemode-btn" title="Free Mode">
+                    <img src="icons/freemode.svg" alt="FreeMode">
+                </button>
+                <button class="tool-button" id="clear-btn" title="Clear">
+                    <img src="icons/clear.svg" alt="Clear">
+                </button>
+            </li>
+            <li>
+                <button class="tool-button" id="undo-btn" title="Undo">
+                    <img src="icons/undo.svg" alt="Undo">
+                </button>
+            </li>
+            <li>
+                <button class="tool-button" id="redo-btn" title="Redo">
+                    <img src="icons/redo.svg" alt="Redo">
+                </button>
+            </li>
+            <li>
+                <button class="tool-button" id="code-btn" title="Export to C++">
+                    <img src="icons/code.svg" alt="Export">
+                </button>
+            </li>
+            <li>
+                <button class="tool-button" id="settings-btn" title="Settings">
+                    <img src="icons/settings.svg" alt="Setting">
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="canvas-container">
+        <canvas id="cartesian-coordinate-system"></canvas>
+
+        <div class="zoom-indicator" id="zoomIndicator">
+            Zoom: 100%
+        </div>
+
+        <div class="coordinate-display" id="mouseCoords">
+            (0.0, 0.0)
+        </div>
+    </div>
+    <script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>
