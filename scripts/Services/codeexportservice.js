@@ -1,5 +1,5 @@
 
-class CodeExportService {
+export class CodeExportService {
 
     generateCppCode(vertices) {
         let code = '';
