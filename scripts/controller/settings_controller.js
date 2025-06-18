@@ -12,7 +12,6 @@ export class SettingsController {
         this.model.on('onStateChaged', (newState) => this.onStateChanged(newState));
 
         this.view.on('onEnableSnappingClicked', isChecked => this.onEnableSnappingClicked(isChecked));
-        this.view.on('onSnappingPrecisionClicked', value => this.onSnappingPrecisionClicked(value));
         this.view.on('onShowgridClicked', value => this.onShowgridClicked(value));
         this.view.on('onSettingsCloseBtn', () => this.onSettingsCloseBtn());
     }
@@ -22,15 +21,11 @@ export class SettingsController {
     }
 
     onEnableSnappingClicked(isChecked) {
-        settings.snapSettings.enabled = isChecked; 
+        settings.enableSnapping = isChecked; 
     }
-
-    onSnappingPrecisionClicked(precisionValue) {
-        settings.snapSettings.precisionValue = 0.1; 
-    }
-
+    
     onShowgridClicked(isChecked) {
-        settings.coordinateSystemSettings.showGrid = isChecked; 
+        settings.showGrid = isChecked; 
     }
 
     onSettingsCloseBtn() {
