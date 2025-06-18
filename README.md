@@ -31,4 +31,4 @@ Navigating the Coordinate System: Use the middle mouse button to drag (pan) the 
 | ![Code Export](icons/code.svg) | **Code Export** – Copies the current vertices as a C++ array to the clipboard. |
 | ![Undo](icons/undo.svg) | **Undo** – Navigate your editing history. Some bugs may occur (work in progress!). |
 | ![Redo](icons/redo.svg) | **Redo** – Navigate your editing history. Some bugs may occur (work in progress!). |
-| ![Settings](icons/settings.svg) | **Settings** – Click on it. Nothing will happen :( |
+| ![Settings](icons/settings.svg) | **Settings** – Opens a panel with simple customization options |
