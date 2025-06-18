@@ -1,6 +1,7 @@
 import { EventTarget } from "../eventtarget.js";
 import { MathHelpers } from "../utils.js";
 
+
 export class VerticiesModel extends EventTarget {
     constructor() {
         super();
@@ -10,6 +11,7 @@ export class VerticiesModel extends EventTarget {
         this.history = [];
         this.historyIndex = -1;
         this.shapeClosed = false;
+
         this.saveState();
     }
 

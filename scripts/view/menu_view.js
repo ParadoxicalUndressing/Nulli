@@ -36,6 +36,11 @@ export class MenuView extends EventTarget {
                 document.getElementById('shapes-btn').classList.add('active');
                 document.getElementById('shapes-btn').nextElementSibling.classList.add('show');
                 break;
+            case 'Settings':
+                document.getElementById('freemode-btn').classList.remove('active');
+                document.getElementById('shapes-btn').classList.remove('active');
+                
+                break;
         }
     }
 

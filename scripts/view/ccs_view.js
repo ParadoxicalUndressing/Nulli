@@ -194,7 +194,7 @@ export class CartesianCoordinateSystemView extends EventTarget {
     }
 
     drawGrid() {
-        if (!settings.coordinateSystemSettings.showGrid) return;
+        if (!settings.showGrid) return;
 
         const canvasWidth = this.canvas.width / this.pixelRatio;
         const canvasHeight = this.canvas.height / this.pixelRatio;
@@ -267,7 +267,7 @@ export class CartesianCoordinateSystemView extends EventTarget {
         const canvasHeight = this.canvas.height / this.pixelRatio;
 
         this.context.strokeStyle = '#2c3e50';
-        this.context.lineWidth = settings.coordinateSystemSettings.bold ? 4 : 2;
+        this.context.lineWidth = 2;
         this.context.setLineDash([]);
 
         const xAxisScreen = this.worldToScreen(0, 0).x;

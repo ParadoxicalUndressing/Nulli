@@ -1,4 +1,4 @@
-import { codeExportService } from "../Services/codeexportservice.js";
+import { codeExportService } from "../services/codeexportservice.js";
 
 export class MenuController {
     constructor(model, view) {
@@ -18,6 +18,7 @@ export class MenuController {
         this.view.on('onCircleBtnClicked', () => this.onCircleBtnClicked());
         this.view.on('onFreeModeBtnClicked', () => this.onFreeModeClicked());
         this.view.on('onClearBtnClicked', () => this.onClearBtnClicked());
+        this.view.on('onSettingsBtnClicked', () => this.onSettingsBtnClicked());
 
         this.view.on('onUndoBtnClicked', () => this.onUndoBtnClicked());
         this.view.on('onRedoBtnClicked', () => this.onRedoBtnClicked());
@@ -85,6 +86,6 @@ export class MenuController {
     }
 
     onSettingsBtnClicked() {
-
+        this.model.changeState('Settings');
     }
 }

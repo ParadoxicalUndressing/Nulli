@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2D Vertex Generator</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -66,6 +72,30 @@
             </li>
         </ul>
     </nav>
+
+    <div class="settings-container hidden" id="settingsContainer">
+        <header>
+            <h1>Settings</h1>
+            <div class="settings" id="settings">
+                <div class="setting">
+                    <label for="enablesnapping">
+                        <span>Enable Snapping</span>
+                        <span>Snaps vertices to the grid when placing them, making alignment easier</span>
+                    </label>
+                    <input type="checkbox" id="enablesnapping">
+                </div>
+                
+                <div class="setting">
+                    <label for="showgrid">
+                        <span>Show Grid</span>
+                        <span>Toggles the visibility of the coordinate grid in the background.</span>
+                    </label>
+                    <input type="checkbox" id="showgrid">
+                </div>
+            </div>
+        </header>
+        <button class="settings-close-btn" id="settings-close-btn" role="button">Close</button>
+    </div>
 
     <div class="canvas-container">
         <canvas id="cartesian-coordinate-system"></canvas>
